@@ -1,10 +1,5 @@
+--- 
+before_script: "-npm install"
 language: node_js
-node_js:
-  - "7"
-  
-  before_script:
-    - npm install
-    
-    script:
-    - echo "Antes de la construccion"
-   - npm build
+node_js: "-\"7\""
+script: "-echo \"Antes de la construccion\" -npm build"
